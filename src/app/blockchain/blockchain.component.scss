@@ -4,41 +4,42 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:600');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
-
 .blockchain {
-     font-family: 'Quantico';
-      background: url("../../assets/img/blockchain_background.png");
-      color: black;
-   
-    &__title {
-        text-align: center;
-        margin: 0 auto;
-        
-    }
+  font-family: 'Quantico';
+  color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__paragraph {
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+  }
 
-    &__paragraph {
-        text-align: center;
-        font-weight: bold;
-        width: 50%;
-        margin: 0 auto;
-    }
+  p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+    color: #db444d;
+  }
 
-    p {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1vw;
-        color: #db444d;
+  &__content {
+    margin-top: 30px;
+    ul {
+      padding: 0;
+      list-style-type: none;
     }
+  }
 
-    &__content {
-        margin-top: 30px;
-    }
-
-    li {
-        width: 35%;
-        margin: 0 auto;
-        color: black;
-    }
+  li {
+    width: 35%;
+    margin: 0 auto;
+    color: black;
+  }
 
 }
 

@@ -3,179 +3,241 @@
 @import url('https://fonts.googleapis.com/css?family=Geo');
 @import url('https://fonts.googleapis.com/css?family=Teko:600');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
+@import "../../smart-grid";
+.section{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.img-responsive{
+  width: 100%;
+  height: auto;
+}
+
+@include screen(993px) {
+  img.company-boutique {
+    max-width: 300px;
+  }
+}
+
 .overview {
-    padding-top: 2em;
-    list-style-type: none;
-    font-family: 'Quantico', sans-serif;
-    font-size: 1.2em;
-    line-height: 50px;
+  padding-top: 2em;
+  list-style-type: none;
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.1em;
+  line-height: 30px;
+  font-weight: bold;
+
+  li {
+    position: relative;
+    .svg-inline--fa {
+      position: absolute;
+      left: -31px;
+      top: 6px;
+    }
+  }
+  li:last-child {
+    margin-top: 30px;
+  }
+  a {
+    background: #04bb86;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
     font-weight: bold;
- 
-    li:last-child {
-        margin-top: 30px;
+    transition: all 0.2s;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    &:hover {
+      background: #04a97c;
     }
-    a {
-        background: #04bb86;
-        padding: 15px;
-        color: #48535a;
-        text-decoration: none;
-        &:hover {
-            color: black;
-            transition: 0.2s;
-        }
-    }
+  }
 
 }
 
 .slogan {
   //  padding-top: 2em;
-    list-style-type: none;
-    font-family: 'Quantico', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
+  list-style-type: none;
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .company {
-    // background: #213a4b; // height: 500px;
-    background: #ffffff;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__text {
+    padding-top: 50px;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-family: 'Quantico';
+    list-style-type: circle;
+    padding-bottom: 20px;
+
+  }
+  &__title {
+    margin: 0 auto;
+    color: #db444d;
+    border-bottom: 4px dashed black;
+    padding-bottom: 10px;
+    font-family: 'Quantico';
+    width: 182px;
     display: flex;
-    align-items: center;
-    &__text {
-        padding-top: 50px;
-        color: black;
-        width: 70%;
-        margin: 0 auto;
-        font-size: 1.3em;
-        font-family: 'Quantico';
-        list-style-type: circle;
-        padding-bottom: 50px;
-       
-    }
-    &__title {
-        margin: 0 auto;
-        color: #db444d;
-        border-bottom: 4px dashed black;
-        padding-bottom: 10px;
-        font-family: 'Quantico';
-        width: 120px;
-        display: flex;
-        justify-content: center;
-        font-weight: bold;
-    }
+    justify-content: center;
+    font-weight: bold;
+  }
 }
 
 .services {
-    background: #213a4b;
-    color: white;
-    &__title {
-        display: flex;
-        justify-content: center;
-        width: 120px;
-        margin: 0 auto;
-        border-bottom: 4px dashed white;
-        padding-bottom: 10px;
-        font-family: 'Quantico';
-        //    color: ##db444d;
-        font-weight: bold;
-        color: #db444d;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    margin: 0 auto;
+    border-bottom: 4px dashed white;
+    padding-bottom: 10px;
+    font-family: 'Quantico';
+    font-weight: bold;
+    color: #db444d;
 
-}
-    &__text {
-        list-style-type: none;
-        margin-top: 30px;
-        font-family: 'Quantico';
-        padding-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        &>li {
-            font-family: 'Quantico';
-            font-weight: bolder;
-        }
+  }
+  &__text {
+    list-style-type: none;
+    margin-top: 30px;
+    font-family: 'Quantico';
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    ul {
+      padding-left: 20px;
+      padding-top: 10px;
     }
+    & > li {
+      font-family: 'Quantico';
+      font-weight: bolder;
+    }
+  }
 }
-
+.bg_primary {
+  background: #0097c1;
+}
 .mission {
-    background: #0097c1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    display: flex;
+    justify-content: flex-start;
+    width: 148px;
+    margin: 0 auto;
+    border-bottom: 4px dashed white;
+    font-family: 'Quantico';
+    padding: 0;
+    color: #db444d;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-family: 'Quantico';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    list-style-type: none;
+    color: white;
+    padding: 0;
     &__title {
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        margin: 0 auto;
-        border-bottom: 4px dashed white;
-        padding-bottom: 30px;
-        font-family: 'Quantico';
-        padding: 0;
-        color: #db444d;
-        font-weight: bold;
-
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 3px;
+      span {
+        padding-left: 15px;
+        font-size: 20px;
+      }
     }
-    &__text {
-        font-family: 'Quantico';
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-top: 50px;
-        text-align: left;
-        list-style-type: none;
-        width: 30em;
-        color: white;
-        &>li {
-            font-family: 'Quantico';
-            font-weight: bolder;
-            text-align: center;
-        }
+    ul {
+      padding: 0;
+      list-style-type: none;
     }
+    & > li {
+      font-family: 'Quantico';
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
 }
 
 .vision {
-    background: #f4f4f4;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    margin: 0 auto;
+    border-bottom: 4px dashed black;
+    padding-bottom: 30px;
+    font-family: 'Quantico';
+    padding: 0;
+    color: #db444d;
+    font-weight: bold;
+  }
+  &__text {
+    font-family: 'Quantico';
+    display: flex;
+    flex-direction: column;
+    justify-content: center; //  padding-top: 50px;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
     &__title {
-        display: flex;
-        justify-content: center;
-        width: 70px;
-        margin: 0 auto;
-        border-bottom: 4px dashed black;
-        padding-bottom: 30px;
-        font-family: 'Quantico';
-        padding: 0;
-        color: #db444d;
-        font-weight: bold;
-
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 3px;
+      span {
+        padding-left: 15px;
+        font-size: 20px;
+      }
     }
-    &__text {
-        font-family: 'Quantico';
-        display: flex;
-        flex-direction: column;
-        justify-content: center; //  padding-top: 50px;
-        text-align: left;
-        list-style-type: none;
-        &>li {
-            font-family: 'Quantico';
-            font-weight: bolder;
-            text-align: center;
-        }
+    ul {
+      padding: 0;
+      list-style-type: none;
     }
+    & > li {
+      font-family: 'Quantico';
+      font-weight: bolder;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 1027px) {
-    .mission {
-        &__text {
-            width: 21em;
-            padding-left: 0;
-        }
+  .mission {
+    &__text {
+      max-width: 21em;
+      padding-left: 0;
+    }
     img {
-        margin:  0 auto;
+      margin: 0 auto;
     }
-    }
+  }
 }
 
 svg:not(:root).svg-inline--fa {
-    color: #ff5a5b;
+  color: #ff5a5b;
 }

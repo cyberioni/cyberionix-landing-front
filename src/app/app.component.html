@@ -1,33 +1,38 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light rounded sticky-top">
-    <a class="navbar-brand" href="#">CyberIonix</a>
-  <button class="navbar-toggler" type="button" (click)="showBurger()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="global-nav sticky-top">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand"routerLink="/company" >CyberIonix</a>
+          <button class="navbar-toggler-button" type="button" (click)="showBurger()"></button>
 
-  <div class="collapse navbar-collapse justify-content-md-end" [class.show]="isVisible" id="navbarsExample10">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a  class="nav-link" routerLink="/Company" routerLinkActive="active-link">Company<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/Solutions" routerLinkActive="active-link"> Solutions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/Blockchain" routerLinkActive="active-link">Blockchain</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/Contact" routerLinkActive="active-link">Contact</a>
-      </li>
-    </ul>
+          <div class="collapse navbar-collapse justify-content-lg-end" [class.show]="isVisible" id="navbarsExample10">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" routerLink="/company" routerLinkActive="active-link">Company<span
+                  class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/solutions" routerLinkActive="active-link"> Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/blockchain" routerLinkActive="active-link">Blockchain</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 
 <router-outlet (activate)="onActivate($event, outlet)" #outlet></router-outlet>
 
 <footer>
-    <div class="footer">
-      <ul>
-        <li>CyberIonix 2018 &#169; </li>
-      </ul>
-    </div>
-  </footer>
+  <div class="footer">
+    <h3>CyberIonix 2018 &#169;</h3>
+  </div>
+</footer>

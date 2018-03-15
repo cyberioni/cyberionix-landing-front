@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CompanyComponent } from './company/company.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { BlockchainComponent } from './blockchain/blockchain.component';
     AppComponent,
     CompanyComponent,
     SolutionsComponent,
-    BlockchainComponent
+    BlockchainComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

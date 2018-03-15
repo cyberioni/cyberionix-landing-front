@@ -1,43 +1,68 @@
+@import "../smart-grid";
+
 .container-fluid {
-    padding: 0;
+  padding: 0;
 }
+
+.navbar-wrapper {
+  display: flex;
+}
+
+.navbar-toggler-button {
+  background: url(../assets/img/burger.png) no-repeat center transparent;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+.global-nav {
+  background: #0097c1 !important;
+}
+.navbar {
+  padding: 0 !important;
+}
+
 .navbar-brand {
-    margin-left: 10%;
-    font-family: 'Libre Barcode 128 text';
-    font-size: 3em;
+  font-family: 'Geo';
+  font-size: 3em;
+  color: white !important;
 }
+
 .navbar-nav {
-    margin-right: 10%;
-    font-family: 'Geo';
-    font-size: 1.7em;
-    font-weight: bolder;
-    white-space: nowrap;
+  font-family: 'Quantico';
+  font-size: 1.7em;
+  font-weight: bolder;
+  white-space: nowrap;
+  .active-link {
+    color: #ffc200 !important
 
-    .active-link {
-        color: #db444d !important
+  }
+  .nav-link {
+    color: white;
 
-    
+    &:hover {
+      color: #ffc200;
     }
-    .nav-link {
-        color: black;
-
-        &:hover {
-            color: #db444d;
-        }
-    }
+  }
 }
 
 .footer {
-    ul {
-        background: #213a4b;
-        height: 3vh;
-        color: white;
-        list-style: none;
-        font-family: 'Quantico';
-        text-align: center;
-        margin: 0;
-        color: #ff5a5b;
-    }
+  background: #0097c1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h3 {
+    color: white;
+    list-style: none;
+    font-family: 'Quantico';
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+  }
 }
 
 //fonts
@@ -47,10 +72,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Timmana');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
-
 //responcive @media
 @media (max-width: 768px) {
-    .navbar-brand {
-        margin-left: 0;
-    }
+  .navbar-brand {
+    margin-left: 0;
+  }
 }
