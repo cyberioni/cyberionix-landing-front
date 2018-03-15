@@ -1,0 +1,56 @@
+.container-fluid {
+    padding: 0;
+}
+.navbar-brand {
+    margin-left: 10%;
+    font-family: 'Libre Barcode 128 text';
+    font-size: 3em;
+}
+.navbar-nav {
+    margin-right: 10%;
+    font-family: 'Geo';
+    font-size: 1.7em;
+    font-weight: bolder;
+    white-space: nowrap;
+
+    .active-link {
+        color: #db444d !important
+
+    
+    }
+    .nav-link {
+        color: black;
+
+        &:hover {
+            color: #db444d;
+        }
+    }
+}
+
+.footer {
+    ul {
+        background: #213a4b;
+        height: 3vh;
+        color: white;
+        list-style: none;
+        font-family: 'Quantico';
+        text-align: center;
+        margin: 0;
+        color: #ff5a5b;
+    }
+}
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Timmana');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+
+
+//responcive @media
+@media (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0;
+    }
+}

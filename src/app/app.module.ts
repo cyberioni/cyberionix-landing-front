@@ -1,0 +1,26 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
+import { CompanyComponent } from './company/company.component';
+import { SolutionsComponent } from './solutions/solutions.component';
+import { BlockchainComponent } from './blockchain/blockchain.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    CompanyComponent,
+    SolutionsComponent,
+    BlockchainComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
