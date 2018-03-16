@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-html {
+html, body {
     width: 100%;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
 }

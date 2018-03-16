@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:600');
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 @import "../../smart-grid";
+
 .section{
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 30px;
+  
 }
 .img-responsive{
   width: 100%;
@@ -81,7 +83,6 @@
     font-size: 1.1em;
     font-family: 'Quantico';
     list-style-type: circle;
-    padding-bottom: 20px;
 
   }
   &__title {

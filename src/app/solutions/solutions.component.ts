@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./solutions.component.scss']
 })
 export class SolutionsComponent implements OnInit {
+  firstLoad: boolean = true;
 
   constructor() { 
-    document.body.scrollTop = 0;
+   /*  document.body.scrollTop = 0; */
   }
 
   ngOnInit() {
+    if(this.firstLoad) {
+      window.scroll(0,0);
+      this.firstLoad = false;
+    }
   }
 
 }
