@@ -12,18 +12,20 @@
   &__title {
     text-align: center;
     margin: 0 auto;
+    font-size: 1.5em;
+
   }
   &__paragraph {
     text-align: center;
     font-weight: bold;
-    width: 50%;
+    width: 36%;
     margin: 0 auto;
   }
 
   p {
     text-align: center;
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 1em;
     color: #db444d;
   }
 
@@ -36,10 +38,17 @@
   }
 
   li {
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
     color: black;
   }
 
 }
 
+@media (max-width: 1027px) {
+  .blockchain {
+    &__paragraph, li {
+      width: 79%;
+    }
+  }
+}

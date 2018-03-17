@@ -9,7 +9,7 @@
     font-family: 'Quantico';
     &__title {
         padding: 0;
-        font-size: 2vw;
+        font-size: 1em;
         border-bottom: 4px solid #343a40;
         font-weight: bold;
         color: #db444d;
@@ -21,7 +21,7 @@
         width: 70%;
     }
     p {
-        width: 45em;
+        
        color:  #515151;
        
     }
@@ -40,3 +40,11 @@
 ul {
     list-style: none;
 }
+
+@media (max-width: 992px) {
+    .solutions {
+        &__title {
+           font-size: 3vw;
+        }
+    }
+} 

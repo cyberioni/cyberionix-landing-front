@@ -8,7 +8,6 @@
 .section{
   padding-top: 90px;
   padding-bottom: 30px;
-  
 }
 .img-responsive{
   width: 100%;
@@ -27,7 +26,11 @@
   font-family: 'Quantico', sans-serif;
   font-size: 1.1em;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: bold; 
+  padding-left: 2em;
+  width: 100%;
+
+
 
   li {
     position: relative;
@@ -39,6 +42,7 @@
   }
   li:last-child {
     margin-top: 30px;
+    white-space: nowrap;
   }
   a {
     background: #04bb86;
@@ -53,20 +57,45 @@
       background: #04a97c;
     }
   }
-
+  &__middle {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: nowrap;
+    li {
+      color: #db444d; 
+      margin: 0 auto; 
+      font-size: 1.1rem;  
+      text-align: center; 
+      font-weight: bold;
+      font-family: 'Quantico', sans-serif;
+    }
+  }
 }
 
 .slogan {
   //  padding-top: 2em;
   list-style-type: none;
   font-family: 'Quantico', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-
+  ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+  }
+  li {
+    line-height: 50px;
+    color: #5b5e61;
+    align-items: center;
+    display: flex;
+    font-size: 0.9em;
+    color: black
+  }
 }
 
 .company {
@@ -182,6 +211,8 @@
   }
 }
 
+
+
 .vision {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -227,17 +258,55 @@
   }
 }
 
+.img-responsive {
+  max-width: 80%;
+}
+
 @media (max-width: 1027px) {
   .mission {
+/*     align-items: center;
+    display: flex; */
     &__text {
       max-width: 21em;
       padding-left: 0;
     }
     img {
       margin: 0 auto;
+      max-width: 50%;
     }
   }
 }
+@media (max-width: 1027px) {
+  .mission-row {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+ @media (max-width: 767.98px) {
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .slogan {
+
+    ul {
+     
+      li {
+        font-style: italic;
+      //  color: #5b5e61;
+        line-height: 30px;
+        max-width: 100%;
+        color: black;
+      }
+    }
+  }
+} 
 
 svg:not(:root).svg-inline--fa {
   color: #ff5a5b;

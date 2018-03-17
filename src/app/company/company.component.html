@@ -4,38 +4,57 @@
 
     <div class="container main d-flex align-item-center justify-content-center ">
         <div class="row  justify-content-center section">
-          <ul class="overview col-md-8 col-lg-4">
-            <li>
-              <i class="fas fa-code"></i> <span>Microservices Software Development</span>
-            </li>
-            <li>
-              <i class="fas fa-database"></i> <span>Big Data Management</span>
-            </li>
-            <li>
-              <i class="fas fa-cloud"></i> <span>Cloud DevOps</span>
-            </li>
-            <li>
-              <i class="fab fa-bitcoin"></i> <span>Blockchains, Cryptocurrencies and Smart Contracts</span>
-            </li>
-            <li>
-              <i class="fas fa-info-circle"></i> <span>Information Technology and Security Consulting</span>
-            </li>
-            <li>
-              <a routerLink="/solutions">check out our solution</a>
-            </li>
-          </ul>
-          <ul style="list-style-type:none" class="col-4">
-            <li style="width: 100%">
-              <img class="img-responsive company-boutique" src="assets/img/company.gif" alt="company-image">
-            </li>
-          </ul>
-          <ul class="col-md-12 col-lg-4 slogan">
-            <li style="color: #db444d; margin: 0 auto; ">A boutique firm with a global reach</li>
-      
-            <li>" No matter where you are, we deliver and support products and solutions for you. Cyberionix has a focus on
-              the Digital needs of the 21st century. "
-            </li>
-          </ul>
+          
+          <div class="d-flex col-md-12 col-lg-8 section__container">
+            <ul class="overview">
+              <li>
+                <p style="color: #db444d; font-size: 1.5em">Company Overview</p>
+              </li>
+              <li>
+                <i class="fas fa-code"></i> <span>Microservices Software Development</span>
+              </li>
+              <li>
+                <i class="fas fa-database"></i> <span>Big Data Management</span>
+              </li>
+              <li>
+                <i class="fas fa-cloud"></i> <span>Cloud DevOps</span>
+              </li>
+              <li>
+                <i class="fab fa-bitcoin"></i> <span>Blockchains, Cryptocurrencies and Smart Contracts</span>
+              </li>
+              <li>
+                <i class="fas fa-info-circle"></i> <span>Information Technology and Security Consulting</span>
+              </li>
+              <li>
+                <a routerLink="/solutions">check out our solution</a>
+              </li>
+            </ul>
+
+              <ul class="overview__middle">
+                <li><img class="img-responsive company-boutique" src="assets/img/company.gif" alt="company-image"></li>
+                <li>A boutique firm with a global reach</li>
+            </ul>
+          </div>
+
+            <div class="col-md-12 col-lg-4 slogan">
+              <ul>
+                <li>
+                  "No matter where you are, we deliver and support products and solutions for you. Cyberionix has a focus on
+                    the Digital needs of the 21st century."
+                </li>
+              </ul>
+            </div>
+ <!--              <ul style="list-style-type:none" class="col-4">
+                  <li style="width: 100%">
+                    <img class="img-responsive company-boutique" src="assets/img/company.gif" alt="company-image">
+                  </li>
+                </ul> -->
+<!--                 <ul class="col-md-12 col-lg-4 slogan">
+            
+                  <li>
+                  </li>
+                </ul> -->
+
         </div>
       </div>
       
@@ -43,7 +62,7 @@
       <div class="bg_primary">
         <div class="container mission">
           <h1 class="mission__title">Mission</h1>
-          <div class="row">
+          <div class="row mission-row">
             <div class="col-md-8 d-flex flex-column  align-items-center">
               <ul class="mission__text">
                 <li class="mission__text__title">
@@ -253,7 +272,7 @@
       
       
       <div class="container company">
-        <div class="row  flex-column">
+        <div class="row flex-column">
           <h1 class="company__title">About Us</h1>
           <ul class="company__text">
             <li>Cyberionix is innovative, Web Services and Microservices architecture oriented, Big Data ecosystem cloud
