@@ -1,139 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Quantico');
 
 
-#contact {
-    padding:10px 0 10px;
-    display: flex;
-    align-items: center; 
-  }
+.container form {
+  background-color: white;
+  color: #888888;
+  text-align: left;
+  padding-top: 20px;
+  margin-top: 200px;
 
-  .title {
-      text-align: center;
-      font-family: 'Quantico';
-      font-size: 2.5vw;
-      font-weight: bold;
-      color: #0097c1;
-  }
-
-  .contact-text{
-    margin:45px auto;
-  }
-
-  .mail-message-area{
-    width:100%;
-    padding:0 15px;
-  }
-
-  .mail-message{
-    width: 100%;
-    background:rgba(255,255,255, 0.8) !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin:0 auto;
-    border-radius: 0;
-  }
-
-  .not-visible-message{
-    height:0px;
-    opacity: 0;
-  }
-
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
-  }
-
-/* Input Styles */
-
-  .form{
-    width: 100%;
-    padding: 15px;
-    background:#f8f8f8;
-    border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
-    color:#727272 !important;
-    font-size:13px;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-
-  .form:hover{
-    border:1px solid #8BC3A3;
-  }
-
-  .form:focus{
-    color: white;
-    outline: none;
-    border:1px solid #8BC3A3;
-  }
-
-  .textarea{
-    height: 200px;
-    max-height: 200px;
-    max-width: 100%;
-  }
-  
-/* Generic Button Styles */
-
-  .button{
-    padding:8px 12px;
-    background:#0A5175;
-    display: block;
-    width:120px;
-    margin:10px 0 0px 0;
-    border-radius:3px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    text-align:center;
-    font-size:0.8em;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-
-  .button:hover{
-    background:#8BC3A3;
-    color:white;
-  }
-
-/* Send Button Styles */
-
-  .form-btn{
-    width:180px;
-    display: block;
-    height: auto;
-    padding:15px;
-    color:#fff;
-    background:#8BC3A3;
-    border:none;
-    border-radius:3px;
-    outline: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin:auto;
-    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
-  }
-
-  .form-btn:hover{
-    background:#111;
-    color: white;
-    border:none;
-  }
-
-  .form-btn:active{
-    opacity: 0.9;
-  }
-center{
-  margin-top:330px;
 }
-input {
-    position: relative;
-    z-index: 9999;
+
+.container label {
+  display: none;
+}
+
+.container input,
+.container textarea {
+  /* to create space for placing icon*/
+  padding-left: 32px;
+  border-color: transparent;
+  background-color: #ffc200;
+  border-radius: 0px;
+}
+
+.container .btn-default {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  padding: 15px 36px;
+  background-color: #0097c1;
+  border-radius: 0px;
+  border: 0px;
+  color: #F1F1F1;
+}
+
+.container .btn-default:hover,
+.container .btn-default:focus {
+  background-color: #049DDF;
+  color: #F1F1F1;
+  border-color: transparent;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+/*position should be relative and z-index greater than one*/
+.container .icon {
+  position: relative;
+  float: left;
+  margin-left: 8px;
+  margin-top: -24px;
+  z-index: 2;
+  color: #222222;
+}
+
+.container .icon-textarea {
+  float: left;
+  margin-left: 8px;
+  margin-top: -104px;
+  position: relative;
+  z-index: 2;
+  color: #222222;
+}
+ 
+.form-title {
+  text-align: center;
+  font-family: 'Quantico';
+  color: #049DDF;
+  font-weight: bold;
+  text-transform: uppercase;
 }
