@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  
   public isVisible: boolean = false;
 
-  onActivate(e, outlet){
-    outlet.scrollTop = 0;
-  }
   showBurger() {
     this.isVisible = !this.isVisible;
+  }
+  onDeactivate() {
+    document.body.scrollTop = 0;
+
   }
 }
