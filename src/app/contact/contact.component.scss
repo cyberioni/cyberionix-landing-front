@@ -3,7 +3,7 @@
 
 .container form {
   background-color: white;
-  color: #888888;
+  color: #fec201;
   text-align: left;
   padding-top: 20px;
   margin-top: 200px;
@@ -19,7 +19,7 @@
   /* to create space for placing icon*/
   padding-left: 32px;
   border-color: transparent;
-  background-color: #ffc200;
+  background-color: #0097c1;
   border-radius: 0px;
 }
 
@@ -30,15 +30,20 @@
   background-color: #0097c1;
   border-radius: 0px;
   border: 0px;
-  color: #F1F1F1;
+  color: #fec201;
+  font-weight: bold;
+  font-family: 'Quantico';
+
 }
 
 .container .btn-default:hover,
 .container .btn-default:focus {
-  background-color: #049DDF;
-  color: #F1F1F1;
+  background-color: #0097c1;
+  color: white;
   border-color: transparent;
   outline: 0px auto -webkit-focus-ring-color;
+  font-weight: bold;
+  font-family: 'Quantico';
 }
 
 /*position should be relative and z-index greater than one*/
@@ -48,7 +53,7 @@
   margin-left: 8px;
   margin-top: -24px;
   z-index: 2;
-  color: #222222;
+  color: #fec201;
 }
 
 .container .icon-textarea {
@@ -57,13 +62,26 @@
   margin-top: -104px;
   position: relative;
   z-index: 2;
-  color: #222222;
+  color: #fec201;
 }
  
 .form-title {
   text-align: center;
   font-family: 'Quantico';
-  color: #049DDF;
+  color: #0097c1;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
 }
