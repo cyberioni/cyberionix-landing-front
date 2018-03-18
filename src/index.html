@@ -1,21 +1,728 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>CYBERIONIX</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/linecons.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/png" href="img/tab.png" />
 
-  <meta name="description" content="CyberIonix Solution">
-  <meta name="keywords" content="Big Data,Cloud,Services,Web,Mobile,Applications,blockchain,solutions">
-  <meta name="author" content="CyberIonix">
 
-  <title>CyberIonix</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(e) {
+        $('.res-nav_click').click(function(){
+		$('ul.toggle').slideToggle(600)	
+			});	
+			
+	$(document).ready(function() {
+$(window).bind('scroll', function() {
+         if ($(window).scrollTop() > 0) {
+             $('#header_outer').addClass('fixed');
+         }
+         else {
+             $('#header_outer').removeClass('fixed');
+         }
+    });
+	
+	  });
+	  
+
+		    });	
+function resizeText() {
+	var preferredWidth = 767;
+	var displayWidth = window.innerWidth;
+	var percentage = displayWidth / preferredWidth;
+	var fontsizetitle = 25;
+	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+	$(".divclass").css("font-size", newFontSizeTitle)
+}
+</script>
 </head>
 <body>
-      <app-root></app-root>
- 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<header id="header_outer">
+  <div class="container">
+    <div class="header_section">
+      <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+      <nav class="nav" id="nav">
+        <ul class="toggle">
+          <li><a href="#top_content">Company Overview</a></li>
+          <li><a href="#service">Vision</a></li>
+          <li><a href="#Projects">Approach</a></li>
+          <li><a href="#Portfolio">Services</a></li>
+					<li><a href="#Clients">Clients</a></li>
+
+		<li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="">
+          <li><a href="#top_content">Company Overview</a></li>
+          <li><a href="#service">Vision</a></li>
+          <li><a href="#Projects">Approach</a></li>
+		  <li><a href="#Portfolio">Services</a></li>
+		<li><a href="#Clients">Clients</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
+  </div>
+</header>
+
+<section id="top_content" class="top_cont_outer">
+  <div class="top_cont_inner">
+    <div class="container">
+      <div class="top_content">
+        <div class="row">
+          <div class="col-lg-5 col-sm-7">
+            <div class="top_left_cont flipInY wow animated">
+              
+              <h2>COMPANY OVERVIEW</h2>
+              <p>Cyberionix is innovative, open-source oriented BI and Analytical services company that provides client-taylored BI solutions. With a unique blend of market knowledge and technology expertise, we provide range of services that help clients attain their strategic objectives of enhanced efficiency, revenue growth, and cost reduction. Our services can be grouped into the following broad categories: Predictive Analytics, Data Mining, Business Research, and Data Warehousing and BI.
+			  </p>
+              <a href="#service" class="learn_more2">Begin</a> </div>
+          </div>
+          <div class="col-lg-7 col-sm-5"> 
+		     <div class="flipInX wow animated">
+		      <img class="img-responsive" src="img/side-bg.jpg" alt="">
+		     </div>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section  id="service">
+  <div class="container">
+    <h2></h2>
+    <div class="service_area">
+      <div class="row">
+      <div class="col-lg-4">
+          <div class="service_block">
+            <div  class="kuku service_icon icon2  delay-03s animated wow zoomIn"> <span id="BI"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+
+           </span> 
+		</div>
+            <h3 id="synergy" class="animated fadeInUp wow">Synergy of Classic BI & Predictive Analytics</h3>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service_block">
+			  <div class="spanservice delay-03s animated wow zoomIn"><h2>VISION</h2><span>
+</span> </div>
+            <h3 class="animated fadeInUp wow"></h3>
+            
+          </div>
+        </div>
+       <div class="col-lg-4">
+          <div class="service_block">
+            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-bolt" aria-hidden="true"></i>
+
+
+</span> </div>
+            <h3 class="animated fadeInUp wow">Design,build and maintain ETL
+<br>– Tools: Talend, Informatica</h3>
+            
+          </div>
+        </div>
+		  
+      </div>
+		<div class="col-lg-4">
+          <div class="service_block">
+            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-pencil" aria-hidden="true"></i>
+
+
+</span> </div>
+            <h3 class="animated fadeInUp wow">OUR PHILOSOPHY IS OUR PLATFORM
+
+</h3>
+            
+          </div>
+        </div>
+      <div class="col-lg-4">
+          <div class="service_block">
+            <div id ="iconi" class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-cube" aria-hidden="true"></i>
+
+
+
+</span> </div>
+            <h3 class="animated fadeInUp wow"><h3 id="we">We are not trying to get a foot in your door, grab a
+project, get money and leave you with crippled
+implementation as many consulting engagements end
+up being for companies – we’re here to build you a
+												  global systematic approach to resolve your objectives</h3></h3>
+            
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="service_block">
+            <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-check" aria-hidden="true"></i>
+
+
+
+</span> </div>
+            <h3 class="animated fadeInUp wow">While BI capabilities are thought to belong to large
+enterprises, we believe BI is for everyone</h3>
+            
+          </div>
+        </div>
+    
+  </div>
+</section>
+
+<section id="Projects">
+<div class="top_cont_latest">
+  <div class="container">
+    <h2>Approach</h2>
+    <div class="work_section">
+   
+       <div class="row margin-bottom-20">
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                	<div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img alt="" src="img/item1.jpg" class="img-responsive">
+                        </div>
+                       				
+                    </div>
+                    <div class="caption">
+                        <h3><a hef="#" class="hover-effect">Low cost BI implementations</a></h3>
+                        <p>- Utilize open source or Cyberionix LLC products</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img alt="" src="img/item2.jpg" class="img-responsive">
+                        </div>
+                                        
+                    </div>
+                    <div class="caption">
+                        <h3><a ref="#" class="hover-effect">Agile Development – iterative approach</a></h3>
+                        <p>- Business receives low hanging fruits in very short period of time
+(3-4 months)<br>
+– Iterations are based on business feedback; it is expected that
+business requirements might change<br>
+– Budget is dynamic and based on potentially changing scope of
+requirements</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img alt="" src="img/item3.jpg" class="img-responsive">
+                        </div>
+                                      
+                    </div>
+                    <div class="caption">
+                        <h3><a ref="#" class="hover-effect">People/Expertise</a></h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft delay-05s">
+                <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                    <div class="thumbnail-img">
+                        <div class="overflow-hidden">
+                            <img alt="" src="img/item4.jpg"
+                           .jpg" class="img-responsive">
+                        </div>
+                                          
+                    </div>
+                    <div class="caption">
+                        <h3><a ref="#" class="hover-effect">MANAGING MARKETING CAMPAIGNS AS A SELF-FEEDING AND SELF-DEFINING PROCESS BASED ON HISTORICAL RESULTS AND DECISION POINTS
+</a></h3>
+                        
+                    </div>
+                </div>
+            </div>
+     
+      </div>
+    </div>
+  </div>
+  <!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
+  </div>
+</section>
+
+
+<section id="Portfolio" class="content"> 
+  
+  <div class="container portfolio-title"> 
+    
+    <div class="section-title">
+      <h2>Services</h2>
+    </div>
+    
+  </div>
+  
+  <div class="portfolio-top"></div>
+  <div class="portfolio"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          </a></li>
+        <li><a class="" href="#" data-filter=".branding">
+          </a></li>
+        <li><a class="" href="#" data-filter=".design">
+          </a></li>
+        <li><a class="" href="#" data-filter=".photography">
+          </a></li>
+        <li><a class="" href="#" data-filter=".videography">
+          </a></li>
+        <li><a class="" href="#" data-filter=".web">
+          </a></li>
+      </ul>
+    </div>
+    
+    <div class="isotope" style="position: relative; overflow: hidden; height: 480px;" id="portfolio-wrap"> 
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   videography isotope-item">
+        <div class="portfolio-image"> <img src="img/service1.jpg"  alt="Portfolio 1"> </div>
+        <a title="Starbucks Coffee" rel="prettyPhoto[galname]" ref="#">
+        <div class="project-overlay">
+          <div class="project-info">
+           
+            <h4 class="project-name">Data Integration</h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+        </a> </div>
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+        <div class="portfolio-image"> <img src="img/service2.jpg" alt="Portfolio 1"> </div>
+        <div class="project-overlay">
+          <div class="open-project-link"> <a class="open-project" href="#" title="Open Project"></a> </div>
+          <div class="project-info">
+           
+            <h4 class="project-name">Design DW</h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+      </div>
+
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design  isotope-item">
+        <div class="portfolio-image"> <img src="img/service3.jpg" alt="Portfolio 1"> </div>
+        <div class="project-overlay">
+          <div class="open-project-link"> <a class="open-project" href="#" title="Open Project"></a> </div>
+          <div class="project-info">
+          
+            <h4 class="project-name">Design,build and maintain ETL</h4>
+            <p class="project-categories">- Tools: Talend, Informatica</p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  photography  branding web isotope-item">
+        <div class="portfolio-image"> <img src="img/service4.jpg" alt="Portfolio 1"> </div>
+        <div class="project-overlay">
+          <div class="open-project-link"> <a class="open-project" href="#" title="Open Project"></a> </div>
+          <div class="project-info">
+           
+            <h4 class="project-name">BI reports, dashboards, scorecards</h4>
+            <p class="project-categories">- Tools: MS Reporting Services, Microstrategy</p>
+          </div>
+        </div>
+      </div>
+  
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design isotope-item">
+        <div class="portfolio-image"> <img src="img/service5.jpg" alt="Portfolio 1"> </div>
+        <div class="project-overlay">
+          <div class="open-project-link"> <a class="open-project" href="#" title="Open Project"></a> </div>
+          <div class="project-info">
+         
+            <h4 class="project-name">Predictive Analytics</h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item">
+        <div class="portfolio-image"> <img src="img/service6.jpg" alt="Portfolio 1"> </div>
+        <div class="project-overlay">
+          <div class="open-project-link"> <a class="open-project" href="#" title="Open Project"></a> </div>
+          <div class="project-info">
+           
+            <h4 class="project-name">DATA MINING</h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  design web isotope-item">
+        <div class="portfolio-image"> <img src="img/service7.jpg" alt="Portfolio 1"> </div>
+        <a ref="#" class="external">
+        <div class="project-overlay">
+          <div class="project-info">
+          
+            <h4 class="project-name">Business Process Modeling</h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+        </a> </div>
+      
+      <div style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   photography isotope-item">
+        <div class="portfolio-image"> <img src="img/service8.jpg" alt="Portfolio 1"> </div>
+        <a title="Stereo Headphones" rel="prettyPhoto[galname]" ref="#">
+        <div class="project-overlay">
+          <div class="project-info">
+           
+            <h4 class="project-name">Provide methodology and data gathering platform for
+creating analytical campaigns </h4>
+            <p class="project-categories"></p>
+          </div>
+        </div>
+        </a> </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="portfolio-bottom"></div>
+  
+  <div id="project-page-holder">
+    <div class="clear"></div>
+    <div id="project-page-data"></div>
+  </div>
+  
+</section>
+							   <h1 id="Clients">.</h1>
+<h2>Our Clients</h2><div class="c-logo-part"><!--c-logo-part-start-->
+  <div class="container">
+    <ul class="delay-06s animated  bounce wow">
+      <li><a href="http://www.sgp.ge/ "  target="_blank"><img src="img/c-liogo1.png" alt=""></a></li>
+      <li><a href="http://www.jti.com/"  target="_blank"><img src="img/c-liogo2.jpg" alt=""></a></li>
+      <li><a href="https://geocell.ge/en"  target="_blank"><img src="img/c-liogo3.png" alt=""></a></li>
+      <li><a href="https://www.ericsson.com/"  target="_blank"><img src="img/c-liogo4.png" alt=""></a></li>
+	      <li><a href="http://virtuace.com/"  target="_blank"><img src="img/c-liogo5.png" alt=""></a></li>
+																						 
+    </ul>
+  </div>
+</div>
+<section class="main-section team" id="team"><!--main-section team-start-->
+  <div class="container">
+    <h2>Our Team</h2>
+    <div class="team-leader-block clearfix">
+      <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic1.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Davit Kochiashvili</h3>
+        <span class="wow fadeInDown delay-03s">Principal Software Architect</p>
+      </div>
+      <div class="team-leader-box">
+        <div class="team-leader  wow fadeInDown delay-06s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic2.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+			<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-06s">Besarion Tarkhnishvili</h3>
+        <span class="wow fadeInDown delay-06s">Big Data Engineer</p>
+      </div>
+      <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-09s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic3.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+		 <li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-09s">Artsem Holdvekht</h3>
+        <span class="wow fadeInDown delay-09s">Software Engineer</span>
+        
+      </div>
+			 <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img class="team" src="img/team-leader-pic4.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+           <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+													  
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Evgeni Ormotsadze</h3>
+        <span class="wow fadeInDown delay-03s">Big Data Enginier</p>
+      </div>
+											   <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic5.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+													  
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Zurab Tevdoradze</h3>
+        <span class="wow fadeInDown delay-03s">Software Developer</p>
+      </div>
+											   <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic6.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+		    <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+													   
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Beqa Saldadze</h3>
+        <span class="wow fadeInDown delay-03s">Software Developer</p>
+      </div>
+											   <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic7.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+		    <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+													   
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Givi Gvinianidze</h3>
+        <span class="wow fadeInDown delay-03s">Web Developer</p>
+											  </div>
+											   <div class="team-leader-box">
+        <div class="team-leader wow fadeInDown delay-03s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic8.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+            <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-03s">Dimitri Sanishvili</h3>
+        <span class="wow fadeInDown delay-03s">BI Developer</p>
+      </div>
+      <div class="team-leader-box">
+        <div class="team-leader  wow fadeInDown delay-06s">
+          <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+          <img src="img/team-leader-pic9.jpg" alt="">
+          <ul>
+            <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+			<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+			<li><a href="javascript:void(0)" class="fa-linkedin"></a></li>
+
+          </ul>
+        </div>
+        <h3 class="wow fadeInDown delay-06s">Nodar Sakvarelidze</h3>
+        <span class="wow fadeInDown delay-06s">DevOps Engineer</p>
+      </div>
+    </div>
+											  
+  </div>
+											  
+											  
+</section>
+
+<footer class="footer_section" id="contact">
+  <div class="container">
+    <section class="main-section contact" id="Contact">
+      <div class="contact_section">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="contact_block">
+              <div class="contact_block_icon rollIn animated wow"><span><i class="fa fa-map-marker" aria-hidden="true"></i>
+
+
+</span></div>
+              <span>8, A. Beliashvili Str., Tbilisi, 0159, Georgia<br>
+  </span> </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact_block">
+              <div class="contact_block_icon icon2 rollIn animated wow"></div>
+              <span>
+ </span> </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="contact_block">
+              <div class="contact_block_icon icon3 rollIn animated wow"><span><i class="fa fa-envelope" aria-hidden="true"></i>
+</span></div>
+              <span> <a href="mailto:info@Cyberionix.com" target="_top">info@Cyberionix.com</a> </span> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 wow fadeInLeft">
+          <div class="contact-info-box address clearfix">
+           
+        
+  </div>
+  <div class="container">
+    <div class="footer_bottom"> <span>© CYBERIONIX 2014</span> </div>
+  </div>
+</footer>
+<script type="text/javascript">
+    $(document).ready(function(e) {
+        $('#header_outer').scrollToFixed();
+        $('.res-nav_click').click(function(){
+            $('.main-nav').slideToggle();
+            return false    
+            
+        });
+        
+    });
+</script> 
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+    document.getElementById('').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'wow fadeInDown';
+	  section.className = 'wow shake';
+	  section.className = 'wow zoomIn';
+	  section.className = 'wow lightSpeedIn';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script> 
+<script type="text/javascript">
+	$(window).load(function(){
+		
+		$('a').bind('click',function(event){
+			var $anchor = $(this);
+			
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top - 91
+			}, 1500,'easeInOutExpo');
+			
+			event.preventDefault();
+		});
+	})
+</script> 
+
+
+<script type="text/javascript">
+
+   
+  jQuery(document).ready(function($){     
+	var container = $('#portfolio-wrap');	
+	
+
+	container.isotope({
+		animationEngine : 'best-available',
+	  	animationOptions: {
+	     	duration: 200,
+	     	queue: false
+	   	},
+		layoutMode: 'fitRows'
+	});	
+
+	$('#filters a').click(function(){
+		$('#filters a').removeClass('active');
+		$(this).addClass('active');
+		var selector = $(this).attr('data-filter');
+	  	container.isotope({ filter: selector });
+        setProjects();		
+	  	return false;
+	});
+		
+		
+		function splitColumns() { 
+			var winWidth = $(window).width(), 
+				columnNumb = 1;
+			
+			
+			if (winWidth > 1024) {
+				columnNumb = 4;
+			} else if (winWidth > 900) {
+				columnNumb = 2;
+			} else if (winWidth > 479) {
+				columnNumb = 2;
+			} else if (winWidth < 479) {
+				columnNumb = 1;
+			}
+			
+			return columnNumb;
+		}		
+		
+		function setColumns() { 
+			var winWidth = $(window).width(), 
+				columnNumb = splitColumns(), 
+				postWidth = Math.floor(winWidth / columnNumb);
+			
+			container.find('.portfolio-item').each(function () { 
+				$(this).css( { 
+					width : postWidth + 'px' 
+				});
+			});
+		}		
+		
+		function setProjects() { 
+			setColumns();
+			container.isotope('reLayout');
+		}		
+		
+		container.imagesLoaded(function () { 
+			setColumns();
+		});
+		
+	
+		$(window).bind('resize', function () { 
+			setProjects();			
+		});
+
+});
+$( window ).load(function() {
+	jQuery('#all').click();
+	return false;
+});
+</script>
 </body>
 </html>
