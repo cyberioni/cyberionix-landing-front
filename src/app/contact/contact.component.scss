@@ -90,3 +90,12 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
+
+@media (max-width: 576px ) {
+  .container {
+    #form {
+      margin-top: 70px;
+    }  
+  }
+
+}
