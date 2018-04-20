@@ -24,7 +24,7 @@
   /* to create space for placing icon*/
   padding-left: 32px;
   border-color: transparent;
-  background-color: #0097c1;
+  background-color: #2f2831;
   border-radius: 0px;
 }
 
@@ -32,7 +32,7 @@
   margin-top: 5px;
   margin-bottom: 30px;
   padding: 15px 36px;
-  background-color: #0097c1;
+  background-color: #2f2831;
   border-radius: 0px;
   border: 0px;
   color: #fec201;
@@ -43,7 +43,7 @@
 
 .container .btn-default:hover,
 .container .btn-default:focus {
-  background-color: #0097c1;
+  background-color: #2f2831;
   color: white;
   border-color: transparent;
   outline: 0px auto -webkit-focus-ring-color;
@@ -69,11 +69,11 @@
   z-index: 2;
   color: #fec201;
 }
- 
+
 .form-title {
   text-align: center;
   font-family: 'Quantico';
-  color: #0097c1;
+  color: #2f2831;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -95,7 +95,7 @@
   .container {
     #form {
       margin-top: 70px;
-    }  
+    }
   }
 
 }
