@@ -6,15 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
-  
-  public isVisible: boolean = false;
+
+  public isVisible = false;
 
   showBurger() {
     this.isVisible = !this.isVisible;
   }
   onDeactivate() {
     document.body.scrollTop = 0;
-
   }
 }

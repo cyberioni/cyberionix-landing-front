@@ -22,6 +22,8 @@
 }
 .global-nav {
   background: #2f2831 !important;
+  line-height: 1.1;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
 }
 .navbar {
   padding: 0 !important;
@@ -38,7 +40,7 @@
 }
 
 .navbar-nav {
-  font-family: 'Quantico';
+  font-family: arial;
   font-size: 1.7em;
   font-weight: bolder;
   white-space: nowrap;
@@ -62,7 +64,7 @@
   h3 {
     color: white;
     list-style: none;
-    font-family: 'Quantico';
+    font-family: arial;
     text-align: center;
     margin: 0;
     font-size: 20px;
