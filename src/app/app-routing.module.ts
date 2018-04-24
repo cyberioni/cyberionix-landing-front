@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/company', pathMatch: 'full' },
+  { path: '', component: CompanyComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'solutions', component: SolutionsComponent },
   { path: 'blockchain', component: BlockchainComponent },
