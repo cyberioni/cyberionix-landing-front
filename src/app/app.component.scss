@@ -43,6 +43,9 @@
   font-family: 'Geo';
   font-size: 3em;
   color: white !important;
+  @include screen(600px){
+    font-size: 2em;
+  }
 }
 
 .navbar-nav {
