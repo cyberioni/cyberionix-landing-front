@@ -9,6 +9,7 @@ import { SolutionsComponent } from './solutions/solutions.component';
 import { BlockchainComponent } from './blockchain/blockchain.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import {SlickModule} from './slick/slick.module';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

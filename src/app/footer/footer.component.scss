@@ -1,14 +1,24 @@
+.get_in_touch{
+  background: #362f38;
+  width: 100%;
+  min-height: 50px;
+  text-align: center;
+  white-space: pre-line;
+  color: white;
+  h3{
+    color: #db444d;
+  }
+}
 .footer {
-    background: #2f2831;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-    list-style: none;
-    font-family: arial;
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background: #2f2831;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  list-style: none;
+  font-family: arial;
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
 }

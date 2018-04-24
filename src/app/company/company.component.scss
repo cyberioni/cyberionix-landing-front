@@ -127,6 +127,35 @@
   }
 }
 
+.solution {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__text {
+    padding-top: 50px;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    font-family: arial;
+    list-style-type: circle;
+
+  }
+  &__title {
+    margin: 0 auto;
+    color: #db444d;
+    border-bottom: 4px dashed black;
+    padding-bottom: 10px;
+    font-family: arial;
+    width: 182px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+}
+
 .services {
   color: white;
   padding-top: 40px;

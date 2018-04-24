@@ -26,7 +26,7 @@
             <i class="fas fa-info-circle"></i> <span>Information Technology and Security Consulting</span>
           </li>
           <li>
-            <a routerLink="/solutions">check out our solution</a>
+            <a (click)="toGetInTach()">Get In Touch</a>
           </li>
         </ul>
 
@@ -38,7 +38,7 @@
       <div class="col-md-12 col-lg-4 slogan">
         <ul>
           <li>
-            "No matter where you are, we deliver and support products and solutions for you. Cyberionix has a focus on
+            "No matter where you are, we deliver and support products and solutions for you. Adionalab has a focus on
             the Digital needs of the 21st century."
           </li>
         </ul>
@@ -280,33 +280,55 @@
   <!-- company -->
 
 
-  <div class="container company">
+  <div class="container solution">
     <div class="row flex-column">
-      <h1 class="company__title">About Us</h1>
-      <ul class="company__text">
-        <li>Cyberionix is innovative, Web Services and Microservices architecture oriented, Big Data ecosystem cloud
-          based, focused
-          on online E-commerce, Blockchain, Data Warehousing, Business Intelligence and Analytical services development
-          and
-          integration company that provides client-tailored solutions.
-        </li>
-        <li>With a unique blend of market knowledge and technological expertise, we provide a range of services that
-          help
-          clients
-          attain their strategic objectives.
-        </li>
-        <li>We understand that our service is paramount to each company's enhanced efficiency, revenue growth, and cost
-          reduction.
-        </li>
-        <li>Our services are grouped into the following categories:</li>
-        <li>Cloud Services, Web & Mobile Applications, Microservices, Data Warehousing, Data Processing and Business
-          Intelligence,
-          Predictive Analytics and Data Mining.
-        </li>
-      </ul>
+      <h1 class="solution__title">Solution</h1><br/><br/>
+      <img src="assets/img/solution/solution_slide.png" alt="" width="100%">
+      <br/><br/>
+      <img src="assets/img/solution/AdionaLabSulutions_slide_1.png" alt="" width="100%">
+      <br/><br/>
+      <img src="assets/img/solution/AdionaLabSulutions_slide_2.png" alt="" width="100%">
     </div>
   </div>
 
+  <div class="blockchain bg_primary">
+    <div class="container blockchain_container">
+      <h1 class="blockchain__title">Hadoop Big Data Ecosystem</h1>
+      <br/><br/>
+      <div class="row justify-content-center">
+        <div class="col-item col-md-6">
+          <h3>Two key services</h3>
+          <p>The Hadoop platform consists of two key services: a reliable, distributed file system and the
+            high-performance parallel data processing engine.</p>
+        </div>
+        <div class="col-item col-md-6">
+          <h3>Approach</h3>
+          <p>The combination of distributed file system and MapReduce programming paradigm provides a software framework
+            for processing vast amounts of data in parallel on large clusters of commodity hardware in a reliable,
+            fault-tolerant manner.</p>
+        </div>
+        <div class="col-item col-md-6">
+          <h3>Other tools</h3>
+          <p>The Hadoop ecosystem includes other tools to address particular needs. Hive is a SQL dialect and engine to
+            translate a Business Logic to MapReduce jobs behind higher-level abstractions more appropriate for user
+            goals. Zookeeper is used for federating services. ORC, Parquet, Avro, Thrift and Protobuf are
+            platform-portable data serialization and description formats.</p>
+        </div>
+        <div class="col-item col-md-6">
+          <h3>In-memory analytics</h3>
+          <p>Apache Spark is a data analytics cluster computing framework of Hadoop open-source community, building on
+            top of the Hadoop Distributed File System (HDFS). Spark solves similar problems as Hadoop MapReduce does but
+            with a fast in-memory approach and a clean functional style API.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container solution">
+    <div class="row flex-column">
+      <img src="assets/img/solution/AdionaLabSulutions_slide_3.png" alt="" width="100%">
+    </div>
+  </div>
   <!-- blockchain -->
 
   <div class="blockchain bg_primary">
@@ -318,7 +340,7 @@
       <div class="row justify-content-center">
         <div class="col-item col-md-4">
           <h3>Why CB Toolkit?</h3>
-          <p>Connecting and using blockchains has never been easy, especially for non-tech users. With Cyberionix
+          <p>Connecting and using blockchains has never been easy, especially for non-tech users. With Adionalab
             Blockchain Toolkit ™ you can greatly simplify your experience with the Blockchain “universe”.</p>
         </div>
         <div class="col-item col-md-4">
@@ -355,6 +377,32 @@
     </div>
   </div>
 
+  <div class="container company">
+    <div class="row flex-column">
+      <h1 class="company__title">About Us</h1>
+      <ul class="company__text">
+        <li>Adionalab is innovative, Web Services and Microservices architecture oriented, Big Data ecosystem cloud
+          based, focused
+          on online E-commerce, Blockchain, Data Warehousing, Business Intelligence and Analytical services development
+          and
+          integration company that provides client-tailored solutions.
+        </li>
+        <li>With a unique blend of market knowledge and technological expertise, we provide a range of services that
+          help
+          clients
+          attain their strategic objectives.
+        </li>
+        <li>We understand that our service is paramount to each company's enhanced efficiency, revenue growth, and cost
+          reduction.
+        </li>
+        <li>Our services are grouped into the following categories:<br/>
+          Cloud Services, Web & Mobile Applications, Microservices, Data Warehousing, Data Processing and Business
+          Intelligence,
+          Predictive Analytics and Data Mining.
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- footer -->
   <app-footer></app-footer>
 </section>

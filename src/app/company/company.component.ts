@@ -13,4 +13,8 @@ export class CompanyComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  toGetInTach() {
+
+  }
 }

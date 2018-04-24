@@ -13,6 +13,6 @@ export class AppComponent {
     this.isVisible = !this.isVisible;
   }
   onDeactivate() {
-    document.body.scrollTop = 0;
+    // document.body.scrollTop = 0;
   }
 }
