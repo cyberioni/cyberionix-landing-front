@@ -24,6 +24,12 @@
   background: #2f2831 !important;
   line-height: 1.1;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+}
+.cb_button{
+  margin-left: auto;
 }
 .navbar {
   padding: 0 !important;

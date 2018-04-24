@@ -1,7 +1,7 @@
 import {AbstractControl} from '@angular/forms';
 
 export class Utils {
-  public static scrollToElement(elementId, scrollPadding?: number) {
+  public static scrollToElement(elementId, scrollPadding?: number, scrollItem = 10) {
     const el = document.getElementById(elementId);
     let yScroll = window.scrollY;
     let sPadding = 0;
@@ -11,7 +11,7 @@ export class Utils {
       if (el.getClientRects()[0].top <= sPadding) {
         interval = window.setInterval(function () {
           window.scroll(0, yScroll);
-          yScroll -= 10;
+          yScroll -= scrollItem;
           if (el.getClientRects()[0].top >= sPadding) {
             window.clearInterval(interval);
           }
@@ -22,7 +22,7 @@ export class Utils {
       } else {
         interval = window.setInterval(function () {
           window.scroll(0, yScroll);
-          yScroll += 10;
+          yScroll += scrollItem;
           if (el.getClientRects()[0].top <= sPadding) {
             window.clearInterval(interval);
           }

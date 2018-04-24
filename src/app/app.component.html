@@ -5,6 +5,7 @@
               <div class="col">
                 <div class="navbar navbar-expand-lg navbar-light">
                   <a class="navbar-brand" routerLink="/company" (click)="onDeactivate()"><span>A</span>dionalab</a>
+                  <button class="cb_button" (click)="toGetInTouch()">Get In Touch</button>
                   <!--<button class="navbar-toggler-button" type="button" (click)="showBurger()"></button>-->
 
                   <!--<div class="collapse navbar-collapse justify-content-lg-end" [class.show]="isVisible" id="navbarsExample10">-->
@@ -38,7 +39,6 @@
         </nav>
 
         </main>
-
 <router-outlet  (deactivate)="onDeactivate()"></router-outlet>
 
 <!-- (activate)="onActivate($event, outlet)" #outlet -->

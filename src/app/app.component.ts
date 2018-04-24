@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Utils} from './utils/Utils';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,9 @@ export class AppComponent {
 
   showBurger() {
     this.isVisible = !this.isVisible;
+  }
+  toGetInTouch() {
+    Utils.scrollToElement('get_in_touch', 0, 50);
   }
   onDeactivate() {
     // document.body.scrollTop = 0;
